@@ -1,0 +1,10 @@
+.dev
+.vscode
+dist
+node_modules
+docs
+coverage
+deploy
+.env
+.env.local
+.env.stg

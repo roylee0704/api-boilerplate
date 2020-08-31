@@ -1,0 +1,14 @@
+{
+    "CannotDeleteRole": "The role '{ roleName }' cannot be deleted",
+    "Forbidden": "You are not currently authorized to perform this action",
+    "EntityWithIdNotFound": "No { entityName } with the id '{ id }' could be found",
+    "SomethingWentWrong": "Something went wrong. Please try again.",
+    "PasswordResetTokenHasExpired": "Password reset token has expired.",
+    "PasswordResetTokenNotRecognized": "Password reset token not recognized",
+    "VerificationTokenHasExpired": "Verification token has expired. Use refreshCustomerVerification to send a new token.",
+    "VerificationTokenNotRecognized": "Verification token not recognized.",
+    "Unauthorized": "Unauthorized access. Please contact the administrator.",
+    "InvalidCredentials": "Invalid user name or password. Please check and try again.",
+    "EmailAddressAlreadyInUsed": "The email address '{ emailAddress }' is already in used by another account",
+    "PrimaryPhoneNumberAlreadyInUsed": "The primary phone number '{ phoneNumber }' is already in used by another account"
+}

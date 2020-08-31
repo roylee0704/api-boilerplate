@@ -1,0 +1,14 @@
+{
+    "admin": true,
+    "admin_password": "0S1U40v9Xk",
+    "admin_secret": "ZGux@4xuC37M*^i41",
+    "anonymous": true,
+    "api_key": "b62c64d3-aa4f-4e9f-adc0-bfc5d9f00a27",
+    "debug": true,
+    "graphite": false,
+    "graphite_host": "localhost",
+    "graphite_port": 2003,
+    "prometheus": false,
+    "token_hmac_secret_key": "ZGux@4xuC37M*^i41",
+    "v3_use_offset": true
+}

@@ -1,0 +1,33 @@
+version: "3"
+services:
+  app:
+    container_name: api
+    env_file:
+      - .env
+      # Environment variables will read from .env when executing `docker-compose up`
+      # Otherwise execute this `DB_HOST=postgres PORT=3000 docker-compose up` to overwrite
+    environment:
+      DB_HOST: postgres
+      PORT: $PORT
+    restart: always
+    build: .
+    ports:
+      - "$PORT:$PORT"
+    links:
+      - postgres
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - .dev/db-data:/var/lib/postgresql/data
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
